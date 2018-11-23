@@ -150,7 +150,7 @@ auto    graph<config_t>::is_root_node( weak_node_t node ) const -> bool
 }
 
 template < class config_t >
-auto    graph<config_t>::contains( weak_node_t node ) const noexcept -> bool
+auto    graph<config_t>::containsNode( weak_node_t node ) const noexcept -> bool
 {
     if ( node.expired() )   // Fast exit.
         return false;
@@ -300,7 +300,7 @@ auto    graph<config_t>::get_edge_count( weak_node_t source, weak_node_t destina
 }
 
 template < class config_t >
-auto    graph<config_t>::contains( weak_edge_t edge ) const noexcept -> bool
+auto    graph<config_t>::containsNode( weak_edge_t edge ) const noexcept -> bool
 {
     if ( edge.expired() )   // Fast exit.
         return false;

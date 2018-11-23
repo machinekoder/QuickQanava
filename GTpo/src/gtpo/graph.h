@@ -217,7 +217,7 @@ public:
     auto    is_root_node( weak_node_t node ) const noexcept( false ) -> bool;
 
     //! Use fast search container to find if a given \c node is part of this graph.
-    auto    contains( weak_node_t node ) const noexcept -> bool;
+    auto    containsNode( weak_node_t node ) const noexcept -> bool;
 
     //! Graph main nodes container.
     inline auto     get_nodes() const -> const shared_nodes_t& { return _nodes; }
@@ -324,7 +324,7 @@ public:
     auto        get_edge_count( weak_node_t source, weak_node_t destination ) const noexcept( false ) -> unsigned int;
 
     //! Use fast search container to find if a given \c edge is part of this graph.
-    auto        contains( weak_edge_t edge ) const noexcept -> bool;
+    auto        containsNode( weak_edge_t edge ) const noexcept -> bool;
 
     //! Graph main edges container.
     inline auto get_edges() const noexcept -> const shared_edges_t& { return _edges; }

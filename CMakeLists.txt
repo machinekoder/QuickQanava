@@ -17,6 +17,7 @@ find_package(Qt5QuickControls2 REQUIRED)
 add_subdirectory(GTpo)
 add_subdirectory(QuickContainers)
 add_subdirectory(src)
+add_subdirectory(python_bindings)
 
 option(BUILD_SAMPLES "Build the samples" TRUE)
 option(DEPLOY "Use windeployqt on Windows" FALSE)

@@ -96,7 +96,7 @@ install(TARGETS QuickQanava
     )
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
-target_link_libraries(QuickQanava PUBLIC GTpo QuickContainers Qt5::Core Qt5::Gui Qt5::QuickControls2)
+target_link_libraries(QuickQanava PUBLIC GTpo QuickContainers Qt5::Core Qt5::Gui Qt5::QuickControls2 Qt5::Quick)
 
 
 # Configure QuickQanava QML module plugin #####################################
